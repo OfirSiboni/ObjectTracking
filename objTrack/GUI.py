@@ -10,7 +10,12 @@ import multiprocessing
 matplotlib.use("TkAgg")
 from matplotlib.figure import Figure
 import plotScript
+'''
+This file is part of the FollowMe's program and is protected by the CC BY-NC-ND 3.0 licence.
+Written by Ofir Siboni in 2/2021
 
+This file is taking care of the GUI of the 
+'''
 #Set up GUI
 window = tk.Tk()  #Makes main window
 window.wm_title("Object tracking")
@@ -52,11 +57,12 @@ selectRoiButton = tk.Button(window, text = "select new object" , command = lambd
 #selectRoiButton.grid(row = 1, column = 1) #TODO: fix change target function
 
 #plotting stuff
+''' TODO: FIX MEMORY OVEREATING
 distanceData = []
 timeData = []
 f = Figure(figsize=(5,5), dpi=100)
 a = f.add_subplot(111)
-
+'''
 
 def run():
 
